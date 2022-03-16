@@ -20,7 +20,7 @@ public class IbiblesRestController {
 	
 	@GetMapping("/{contents}")
 	public List<Bible> retrieveContents(@PathVariable String contents) throws Exception{
-		List<Bible> biblelist = ibibleRepository.findAllContents(contents, Sort.by(Sort.Direction.DESC,"id"));
+		List<Bible> biblelist = ibibleRepository.findAllContents(contents, Sort.by(Sort.Direction.ASC,"id"));
 		return biblelist;
 	}
 
