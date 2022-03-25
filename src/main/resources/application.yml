@@ -8,7 +8,7 @@ logging:
 spring:#  h2: #   console:  #    enabled: true
   jpa:    show-sql: true
     hibernate:      ddl-auto: create    defer-datasource-initialization: true
-    database: h2
+    database: mysql
     properties:
       hibernate:
         jdbc:
