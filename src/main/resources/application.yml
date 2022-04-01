@@ -12,7 +12,6 @@ spring:#  h2: #   console:  #    enabled: true
     properties:
       hibernate:
         jdbc:
-          batch_size: 100  datasource:    url: jdbc:mariadb://localhost:3306/mess?characterEncoding=UTF-8&serverTimezone=UTC
-    driver-class-name: org.mariadb.jdbc.Driver
-    username: 
-    password: 
+          batch_size: 100
+      connection:
+        charSet: UTF-8

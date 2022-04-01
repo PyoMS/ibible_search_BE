@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### user option ###
+src/main/resources/*.yml
