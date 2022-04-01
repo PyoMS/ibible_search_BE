@@ -1,17 +1,0 @@
-server:
-  port: 7068
-
-logging:
-  level:
-    org.springframework: DEBUG
-
-spring:#  h2: #   console:  #    enabled: true
-  jpa:    show-sql: true
-    hibernate:      ddl-auto: create    defer-datasource-initialization: true
-    database: mysql
-    properties:
-      hibernate:
-        jdbc:
-          batch_size: 100
-      connection:
-        charSet: UTF-8
